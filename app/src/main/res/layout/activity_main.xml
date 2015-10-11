@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@android:color/background_dark" android:padding="0dip"
+    android:layout_margin="0dip">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:id="@+id/loading"
+        android:padding="25dip" android:orientation="vertical"
+        android:gravity="center">
+        <ProgressBar android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/progress"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_margin="20dip" />
+        <TextView android:layout_width="fill_parent" android:textColor="@android:color/primary_text_dark"
+            android:layout_height="wrap_content" android:text="@string/loading"
+            android:gravity="center" />
+    </LinearLayout>
+    <WebView android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:id="@+id/webview"
+        android:visibility="invisible" android:padding="0dip"
+        android:layout_margin="0dip" />
+</FrameLayout>
